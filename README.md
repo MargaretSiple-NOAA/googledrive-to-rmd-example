@@ -22,6 +22,13 @@ This set of scripts works by a stepwise process:
 
 At the end, you will have a Word doc that you have compiled straight from R. Cool, huh!!
 
+## Entry points for folks who aren't set up for RStudio/git/Markdown
+
+There are many "entry points" where you can collaborate with people on different parts of the report. Here are some options for where people from your team can contribute. These will all be fairly painless :
+
+* editing text in Google docs
+* editing citations in [`cite/bibliography.bib`](https://github.com/MargaretSiple-NOAA/googledrive-to-rmd-example/blob/main/cite/bibliography.bib) (can edit in browser on github). They can use [zbib.org](https://zbib.org/) to get the BibTeX version of any citation. Or if they want to add several at once, export them from a Zotero or Mendeley library and save as (or paste into) `bibliography.bib`
+* creating tables as text or figures as any image format (these can be imported painlessly using `read.csv()` and `knitr::include_graphics()` in your R code chunks)
 
 # Google drive folder access
 
