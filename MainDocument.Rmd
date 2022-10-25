@@ -1,0 +1,51 @@
+---
+output:
+  officedown::rdocx_document: 
+    reference_docx: style_example.docx
+    pandoc_args: ["--metadata-file=header.yaml"]
+csl: "cite/citestyle.csl"
+bibliography: "cite/bibliography.bib"
+---
+
+# R setup for Markdown
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, error = FALSE, message = FALSE)
+library(officedown)
+library(officer)
+#library(pandoc)
+library(rmarkdown)
+
+# This downloads text chunks from Google Drive!
+source(here::here("get_files_from_gdrive.R"))
+
+# This defines some constants that we can use to populate the report.
+constantvalue <- 5
+```
+
+# Components
+There are three components in the header:
+
+1. `style_example.docx` is a Word file with the styles you want to use. Edit the layout options in this file to get different styles for Header 1, etc.
+2. `header.yaml` is the basic yaml header for the doc.
+3. `citestyle.csl` has the citation formatting
+4. `bibliography.bib` is your bibliography. Refer to this when tagging references in your doc.
+
+# Example of imported text.
+
+Using "children," you can have a hybrid Markdown file containing both regular Markdown in the .Rmd file, and text chunks you've downloaded from google drive. So! This here is text I typed straight into the Rmd, and ...
+
+```{r child=here::here("gdrive_downloads","TextChunk1.Rmd")}
+```
+
+# Tables
+```{r tab.cap='This is a caption for a table. A hot tip for tables and figures is that Markdown hates underscores in your figure ids. So if you assign a figure id, use hyphens instead.', tab.id='table-basic',  tab.cap.style = "Table Caption"}
+tab1 <- data.frame(Label = c("A","B","C"),
+                   Number = rnorm(n = 3,mean = 1,sd = .5))
+tab1
+```
+
+# Figures
+```{r fig.cap='This is a caption for a figure.', fig.id='fig-basic',  tab.cap.style = "Figure Caption"}
+plot(1:10,1:10)
+```
