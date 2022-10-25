@@ -4,4 +4,4 @@
 .Ruserdata
 
 # Google drive downloads (should be unique)
-/gdrive_downloads/*
+gdrive_downloads/
