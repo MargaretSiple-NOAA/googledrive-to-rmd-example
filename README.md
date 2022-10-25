@@ -1,6 +1,8 @@
 # googledrive-to-rmd-example
 A brief example showing how to integrate Google docs and Rmd to make reports, etc. This particular example is built to knit to Word. 
 
+If I did this right, you should be able to clone this repo and knit the "MainDocument.Rmd" file to make a full report.
+
 # Packages needed
 
 You'll need the following packages. Copy and paste the code below to get them all installed.
@@ -20,6 +22,11 @@ This set of scripts works by a stepwise process:
 
 At the end, you will have a Word doc that you have compiled straight from R. Cool, huh!!
 
+
 # Google drive folder access
 
 Anyone with a NOAA email should have access to [this](https://drive.google.com/drive/folders/1qC4L9CLsXyGkVn4pCFnCUZ8IanUokVZ5?usp=sharing) Google Drive folder containing docs for the final report.
+
+# Do you have questions or hot tips?
+
+Or if something isn't working... please leave an issue above.
