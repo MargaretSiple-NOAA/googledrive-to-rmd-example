@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Google drive downloads (should be unique)
+/gdrive_downloads/*
