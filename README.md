@@ -1,7 +1,7 @@
 # googledrive-to-rmd-example
 A brief example showing how to integrate Google docs and Rmd to make reports, etc. This particular example is built to knit to Word. I like this approach for cases where I am either working with a large group of collaborators (thus making Markdown collab straight on GitHub a little clunky), or working on a product with collaborators who have a range of different skills, including folks who don't regularly use GitHub.
 
-If I did this right, you should be able to clone this repo and knit the "MainDocument.Rmd" file to make a full report.
+If I did this right, you should be able to clone this repo, run `googledrive::drive_auth()` in the R console, and knit the "MainDocument.Rmd" file to make a full document.
 
 # Packages needed
 
@@ -17,8 +17,8 @@ if(length(new.packages)) install.packages(new.packages)
 # Workflow
 
 This set of scripts works by a stepwise process:
-1. Download files from google docs and convert them to Rmd
-2. Knit the Rmd to Word
+1. Download files from google docs and convert them to .Rmd
+2. Knit the .Rmd to Word
 
 At the end, you will have a Word doc that you have compiled straight from R. Cool, huh!!
 
