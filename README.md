@@ -3,6 +3,8 @@ A brief example showing how to integrate Google docs and Rmd to make reports, et
 
 If I did this right, you should be able to clone this repo, run `googledrive::drive_auth()` in the R console, and knit the "MainDocument.Rmd" file to make a full document.
 
+Usually, I organize things into folders, like `R/` and `markdown/`, but for this example I put everything in one folder so it's all out in the open! I recommend organizing your files if you're making a report like this for real. 
+
 # Packages needed
 
 You'll need the following packages. Copy and paste the code below to get them all installed.
