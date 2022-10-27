@@ -5,7 +5,7 @@ If I did this right, you should be able to clone this repo, run `googledrive::dr
 
 Usually, I organize things into folders, like `R/` and `markdown/`, but for this example I put everything in one folder so it's all out in the open! I recommend organizing your files if you're making a report like this for real. 
 
-Note! This is just one way you can draw text and R code into the same knitted Markdown document. Other ways include using the [Trackdown package](https://cran.r-project.org/web/packages/trackdown/vignettes/trackdown-workflow.html), and if you're working in Quarto, another comment interface that Josh London can tell you about. 
+Note! This is just one way you can draw text and R code into the same knitted Markdown document. Other ways include using the [Trackdown package](https://cran.r-project.org/web/packages/trackdown/vignettes/trackdown-workflow.html), and if you're working in Quarto, the [cool Quarto commenting interface](https://quarto.org/docs/output-formats/html-basics.html#commenting) (thanks Josh London!). 
 
 # Packages needed
 
