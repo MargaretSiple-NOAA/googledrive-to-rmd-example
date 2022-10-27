@@ -1,9 +1,11 @@
 # googledrive-to-rmd-example
-A brief example showing how to integrate Google docs and Rmd to make reports, etc. This particular example is built to knit to Word. I like this approach for cases where I am either working with a large group of collaborators (thus making Markdown collab straight on GitHub a little clunky), or working on a product with collaborators who have a range of different skills, including folks who don't regularly use GitHub.
+A brief example showing one way to integrate Google docs and Rmd to make reports, etc. This particular example is built to knit to Word. I like this approach for situations where I am either working with a large group of collaborators (thus making Markdown collab straight on GitHub a little clunky), or working on a product with collaborators who have a range of different skills, including folks who don't regularly use GitHub.
 
 If I did this right, you should be able to clone this repo, run `googledrive::drive_auth()` in the R console, and knit the "MainDocument.Rmd" file to make a full document.
 
 Usually, I organize things into folders, like `R/` and `markdown/`, but for this example I put everything in one folder so it's all out in the open! I recommend organizing your files if you're making a report like this for real. 
+
+Note! This is just one way you can draw text and R code into the same knitted Markdown document. Other ways include using the [Trackdown package](https://cran.r-project.org/web/packages/trackdown/vignettes/trackdown-workflow.html), and if you're working in Quarto, another comment interface that Josh London can tell you about. 
 
 # Packages needed
 
