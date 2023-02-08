@@ -7,6 +7,8 @@ Usually, I organize things into folders, like `R/` and `markdown/`, but for this
 
 Note! This is just one way you can draw text and R code into the same knitted Markdown document. Other ways include using the [Trackdown package](https://cran.r-project.org/web/packages/trackdown/vignettes/trackdown-workflow.html), and if you're working in Quarto, the [cool Quarto commenting interface](https://quarto.org/docs/output-formats/html-basics.html#commenting) (thanks Josh London!). 
 
+#### :seedling: Update: **See [this repo](https://github.com/MargaretSiple-NOAA/parameterized-indexing-example) for an example of a parameterized report where you can generate repetitive chapters for a series of species or stocks.** The repo provides both a Quarto and a Markdown solution.
+
 # Packages needed
 
 You'll need the following packages. Copy and paste the code below to get them all installed.
